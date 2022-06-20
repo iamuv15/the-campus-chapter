@@ -1,0 +1,3502 @@
+.global-wrapper{
+  min-height: 100% !important;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ecf0f5;
+  padding-bottom: 100px;
+}
+
+/* overlay effect */
+.fullscreen-container {
+	  display: block;
+    /* position fixed will make the post container fall small when long post is written */
+	  position: absolute;
+	  top: 50px;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background: #ecf0f5;
+	  z-index: -9999;
+	}
+/* overlay effect ends */
+
+/* navigation bar */
+
+nav{
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #3c8dbc;
+  /* border: 1px solid black; */
+}
+
+.logo-container{
+  display: inline-block;
+  width: 220px;
+  height: 50px;
+  background-color: #367fa9;
+}
+
+.logo-lg{
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.logo-lg > i, .logo-lg > span{
+  color: white;
+  font-size: 15px;
+}
+
+.logo-lg > i{
+  margin: 17px 15px !important;
+  position: relative;
+  left: 13px;
+}
+
+.logo-lg > span{
+  padding-left: 1px !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.links-container{
+  display: inline-block;
+  position: absolute;
+  right: 0%;
+}
+
+.links-container > .update-links{
+  display: inline;
+  position: relative;
+  right: 70%;
+}
+
+.links-container > .static-links{
+  display: inline;
+  position: relative;
+  right: 0%;
+}
+
+.links-container > ul > .nav-notify{
+  display: inline-block;
+  position: relative;
+  top: -6px;
+  color: #fff;
+  padding: 16px !important;
+  margin-right: -5px;
+}
+
+.links-container > ul > .nav-profile{
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  margin-top: -4px;
+  margin-right: -5px;
+}
+
+.links-container > ul > a:hover{
+  color: #fff;
+  background: #367fa9;
+}
+
+.links-container > ul > a:active{
+  color: #fff !important;
+  background: #367fa9;
+}
+
+.links-container > ul > a > li{
+  list-style: none;
+}
+
+.links-container > ul > a > li > i{
+  margin: 0 !important;
+  font-size: 14px;
+}
+
+.links-container > ul > a > li > span{
+  position: relative;
+  top: -5px;
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400 !important;
+}
+
+.links-container > ul > a > li > img{
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+}
+
+/* .update-links > a > li > .navigation-profile-icon{
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+}
+
+.update-links > a > li > .navigation-profile-text{
+  display: inline-block;
+} */
+
+/* navigation bar ends */
+
+/* sidebar section */
+
+.control-sidebar{
+  position: fixed;
+  right: 0;
+  display: block;
+  height: 1000px;
+  width: 240px;
+  border: 1px solid black;
+  /* background-color: #2E4052; */
+  background-color: #222d32;
+}
+
+.control-sidebar > nav {
+  height: 40px;
+  width: inherit;
+  background-color: #141a1d;
+  position: absolute;
+  box-sizing: border-box;
+  right: 0;
+  top: 50px;
+  padding: 0 !important;
+}
+
+.control-sidebar > nav > ul{
+  box-sizing: border-box;
+  height: 40px;
+}
+
+.control-sidebar > nav > ul > li{
+  display: inline-block;
+  width: 33.333%;
+  height: 40px;
+  box-sizing: border-box;
+  margin-right: -3px;
+  /* margin: 0px; */
+  /* padding: 9px 0; */
+}
+
+.control-sidebar > nav > ul > .active{
+  background-color: #222d32 !important;
+  /* cursor: default !important; */
+}
+
+.control-sidebar > nav > ul > li > a{
+  position: absolute;
+  top: 0;
+  padding: 11px 32px;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+}
+
+.control-sidebar > nav > ul > li > a:hover{
+  background-color: #333;
+}
+
+.control-sidebar > .sidebar-tab-content{
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  right: 0;
+  /* border: 1px solid white; */
+}
+
+.control-sidebar > .sidebar-tab-content > .sidebar-active-tab,
+.control-sidebar > .sidebar-tab-content > .sidebar-home,
+.control-sidebar > .sidebar-tab-content > .sidebar-settings{
+  display: none;
+}
+
+.show{
+  display: block !important;
+}
+
+.show-1{
+  display: block !important;
+}
+
+.control-sidebar > .sidebar-tab-content > .sidebar-active-tab > .search-bar{
+  position: relative;
+  height: 42px;
+  width: 90%;
+    margin: 0 10px;
+  /* background-color: white; */
+  border: 1px solid #2a3b4b;
+}
+
+.control-sidebar > .sidebar-tab-content > .sidebar-active-tab > .search-bar > input:focus,
+.control-sidebar > .sidebar-tab-content > .sidebar-active-tab > .search-bar > input:focus .search-bar-icon{
+  background-color: white !important;
+  color: black;
+}
+
+.control-sidebar > .sidebar-tab-content > .sidebar-active-tab > .search-bar > input{
+  padding: 11.7px 12px;
+  margin: 0.1px 0px 10px 0.5px;
+  outline: none !important;
+  /* margin: 0 10px; */
+  /* height: 40px; */
+  width: 82.6%;
+  background-color: #2e4052;
+  border: 0px;
+  color: white;
+  display: inline-block;
+}
+
+.control-sidebar > .sidebar-tab-content > .sidebar-active-tab > .search-bar > .search-bar-icon{
+  position: absolute;
+  display: inline-block;
+  padding: 10px 0px;
+  margin-left: 0px;
+  background-color: #2e4052;
+  cursor: pointer;
+  height: 39.5px;
+  width: 36px;
+  /* border: 0.1px solid white; */
+}
+
+.control-sidebar > .sidebar-tab-content > .sidebar-active-tab > .search-bar > .search-bar-icon > a > center > .fa-search{
+  color: white;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Messaging area */
+/* active-user-list */
+
+.active-user-list,
+.home-options{
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  margin-top: 10px;
+  /* border: 1px solid white; */
+}
+
+.active-user-list > span,
+.home-options > span{
+  padding: 0px 5px !important;
+  position: ;
+  /* border: 1px solid yellow; */
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  font: "Trebuchet MS";
+}
+
+.active-user-list > ul > a > li,
+.home-options > ul > a > li{
+  /* border: 1px solid red; */
+  position: relative;
+  padding: 4px 0 0.8px;
+  top: -5px !important;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+.active-user-list > ul > a > li:hover,
+.home-options > ul > a > li:hover{
+  /* border: 1px solid red; */
+  background-color: #4c4c4c;
+}
+
+.active-user-list > ul > a > li > span,
+.home-options > ul > a > li > span{
+  margin-left: 5px;
+  display: inline-block;
+  position: absolute;
+  /* border: 1px solid yellow; */
+  color: white;
+  padding: 10px 0;
+  margin-top: -2px;
+  font-family: "Trebuchet MS";
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.active-user-list > ul > a > li > .active-user-image{
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  margin-left: 5px;
+  border-radius: 100px;
+}
+
+.active-user-list > ul > a > li > .active-user-image > img{
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 1.5px solid white;
+}
+
+.active-user-list > ul > a > li > div > #active-flash{
+  border: 1.5px solid lightgreen !important;
+}
+
+.active-user-list > ul > a > li > #active-flash-text{
+  color: lightgreen !important;
+}
+
+.home-options > ul > a > li > .icon-container{
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  /* border: 1px solid white; */
+  line-height: 35px !important;
+  text-align: center !important;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-bottom: 3px;
+}
+
+.home-options > ul > a > li > .icon-container > i{
+  font-size: 18px;
+  color: white;
+}
+
+/* active-user-list ends */
+/* Messaging area ends */
+
+
+/* sidebar section ends */
+
+/* user-online-icon */
+
+.user-online-icon{
+  position: relative;
+  height: 0px !important;
+  width: 0px !important;
+  border: 4px solid lightgreen;
+  background-color: green;
+  border-radius: 100px;
+  float: right;
+  right: 20px;
+  top: -4px;
+}
+
+/* user-online-icon ends */
+
+/* background-colors */
+
+.bg-green{
+  background-color: green;
+  border-radius: inherit;
+
+}
+
+.bg-aqua{
+  background-color: aqua;
+  border-radius: inherit;
+
+}
+
+.bg-purple{
+  background-color: purple;
+  border-radius: inherit;
+}
+
+.bg-red{
+  background-color: red;
+  border-radius: inherit;
+}
+
+.bg-orange{
+  background-color: orange;
+  border-radius: inherit;
+}
+
+/* background-color ends */
+
+/* placeholder color */
+
+::placeholder {
+  color: #367fa9;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #367fa9;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #367fa9;
+}
+
+/* placeholder color ends */
+
+/* Header section containing cover pic, profile pic */
+
+.header-container{
+  /* border: 1px solid black; */
+  position: relative;
+  top: 50.8px;
+  /* width: 70%; */
+  width: 55%;
+  height: 300px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.event-page{
+  width: 100% !important;
+  height: 352px !important;
+  position: absolute;
+  left: 0px;
+}
+
+.event-content{
+  position: relative !important;
+  top: 400px !important;
+}
+
+.cover-container{
+  /* border: 1px solid black; */
+  height: inherit;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #474973;
+}
+
+.cover-info-container{
+  display: block;
+  /* border: 1px solid white; */
+  width: 80%;
+  height: 180px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.cover-tinted{
+  background-color: rgba(0, 0, 0, 0.6);
+  height: inherit;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.profile-pic{
+  display: inline-block;
+  width: 123px;
+  opacity: 1 !important;
+}
+
+.profile-pic-container{
+  /* border: 1px solid black; */
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  position: relative;
+  border: 4px solid white;
+}
+
+.profile-pic-container > img{
+  height: 112px;
+  width: 112px;
+  border-radius: inherit;
+  /* box-sizing: border-box; */
+}
+
+.cover-userinfo,
+.cover-eventinfo{
+  display: inline-block;
+  position: absolute;
+  /* border: 1px solid black; */
+  width: auto;
+  height: 120px;
+  margin-left: 20px;
+  /* padding-top: 20px; */
+}
+
+.cover-userinfo > p,
+.cover-eventinfo > p{
+  /* margin-top: 20px; */
+  font-size: 16px;
+  font-family: "Trebuchet MS";
+  color: white;
+  line-height: 50%;
+}
+
+.cover-eventinfo > .event-title{
+  font-size: 40px !important;
+  color: yellowgreen;
+  line-height: 10%;
+}
+
+.cover-eventinfo > .event-club{
+  font-size: 16px;
+  font-family: "Trebuchet MS";
+  color: white;
+}
+
+.event-begin{
+  color: #1da1f2 !important;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.play-btn{
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.fa-play-circle-o{
+  font-size: 25px !important;
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.edit-btn{
+  position: absolute;
+  top: -60px;
+  right: -12.5%;
+  padding: 10px;
+  opacity: 0.7;
+  background-color: black;
+}
+
+.change-btn{
+  display: none;
+  color: white !important;
+  font-size: 12px;
+  text-decoration: none;
+  background-color: #367fa9 !important;
+  border-radius: 20px;
+}
+
+.change-btn:hover > .edit-btn{
+  display: block;
+  text-decoration: underline !important;
+}
+
+.cover-container:hover > .cover-tinted > .cover-info-container > .change-btn{
+  display: block;
+}
+
+.btn-inline{
+  position: relative;
+  top: 10px;
+}
+
+button{
+  background-color: #FFE2FE;
+  border: 0;
+  padding: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 85px;
+  outline: none;
+}
+
+.ellipsis-h{
+  width: 25px !important;
+  border-radius: 50px;
+}
+
+.fa-ellipsis-h{
+  position: relative;
+  top: 1.75px;
+}
+
+.link-section{
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+  bottom: 14px;
+  left: 10%;
+}
+
+.link-section > a{
+  margin-right: -4px !important;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Trebuchet MS";
+  color: white;
+  padding: 15px;
+  /* border: 1px solid black; */
+}
+
+/* Header section ends */
+
+/* User info section */
+
+.content{
+  display: block;
+  /* border: 1px solid black; */
+  width: 55%;
+  height: auto;
+  position: relative;
+  top: 53px;
+  margin: 0 auto;
+  /* bottom: -25px; */
+}
+
+.inline-content{
+  position: relative;
+  width: 100%;
+}
+
+.user-wigid{
+  display: block;
+  position: relative;
+  top: 2px;
+  height: auto;
+  width: 35%;
+  margin: 0 !important;
+  margin-bottom: 10px;
+}
+
+.wigid-border{
+  height: inherit;
+  border-radius: 4px;
+  border-top: 3px solid #3c8dbc;
+  padding: 5px;
+  background-color: white;
+  margin-bottom: 10px;
+  box-shadow: 0 0 3px grey;
+}
+
+.feed{
+  height: auto;
+  position: relative;
+  float: right !important;
+  /* width: 69%; */
+  width: 64%;
+  top: 0px;
+  /* border: 1px solid yellow; */
+  display: inline-block;
+}
+
+hr{
+  /* border: 0; */
+  height: 0.2px;
+  background: #fff;
+}
+
+/* user info section ends */
+
+/* create post */
+
+.create-post-container{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 0 3px grey;
+  /* border-bottom: 3px solid #3c8dbc; */
+  padding-top: 1px;
+  margin-top: 2px;
+  top: 2px;
+}
+
+.create-post-container > center > h3{
+  font-size: 22px !important;
+  font-family: "Trebuchet MS";
+}
+
+hr{
+  border: 0.5px solid #ccc;
+}
+
+.create-post-container > center > h3 > span{
+  color: #367fa9;
+}
+
+.post-type{
+  position: relative;
+  display: inline-block;
+  height: 210px;
+  width: 48%;
+  border: 1px solid #3c8dbc;
+  border-radius: 3px;
+}
+.post-type > *{
+  position: absolute;
+}
+
+.post-type > .fa-globe,
+.post-type > .fa-gavel,
+.post-type > .fa-calendar,
+.post-type > .fa-users{
+  right: 0;
+  padding: 10px;
+  font-size: 25px;
+  color: #367fa9;
+}
+
+.public-post-container, .private-post-container{
+  position: absolute !important;
+  bottom: 30px;
+  margin-left: 20px;
+  height: 100px;
+  width: 90%;
+  /* border: 1px solid black; */
+}
+
+.public-post-popup > .post-container-wrapper > .post-container > .post-container-header,
+.public-post-edit-popup > .post-container-wrapper > .post-container > .post-container-header{
+  /* border: 1px solid black; */
+  /* position: absolute !important;
+  top: 0 !important; */
+}
+
+.public-post-popup > .post-container-wrapper > .post-container > .post-container-header > textarea,
+.public-post-edit-popup > .post-container-wrapper > .post-container > .post-container-header > textarea{
+  height: auto;
+}
+
+.public-post-container > h4, .private-post-container > h4{
+  position: absolute !important;
+  left: 10px !important;
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+}
+
+.public-post-container > h4 > span, .private-post-container > h4 > span{
+  color: #367fa9;
+}
+
+.public-post-container > span{
+  position: absolute !important;
+  left: 4px !important;
+  bottom: 20px;
+  font-family: "Trebuchet MS";
+  color: #3c8dbc;
+}
+
+.private-post-container > span{
+  position: absolute !important;
+  left: -3.5px !important;
+  bottom: 10px;
+  font-family: "Trebuchet MS";
+  color: #3c8dbc;
+}
+
+
+/* public post popup */
+
+.public-post-popup, .poll-box, .question-box{
+  display: none;
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 4px !important;
+  left: 30.5%;
+  /* min-height: 298px; */
+  height: auto !important;
+  width: 31.3% !important;
+  background-color: white;
+  box-shadow: 0px 0px 1px black;
+}
+
+.public-post-edit-popup{
+  display: none;
+  position: absolute;
+  top: 200px !important;
+  left: 23.2%;
+  /* min-height: 298px; */
+  height: auto !important;
+  width: 33.6%;
+  background-color: white;
+  box-shadow: 0px 0px 1px black;
+  z-index: 2;
+}
+
+.private-post-popup{
+  display: none;
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 4px !important;
+  left: 30.5%;
+  min-height: 298px;
+  height: auto !important;
+  width: 31.3%;
+  background-color: white;
+  box-shadow: 0px 0px 1px black;
+}
+
+.open-1{
+  display: block;
+}
+
+.open-2{
+  display: block;
+}
+
+.hide{
+  display: none !important;
+}
+
+.post-type-options > .close-1{
+  position: absolute;
+  right: 0px;
+  padding: 7px 10px 4px;
+  cursor: pointer;
+}
+
+.private-post-popup > .close-2{
+  position: absolute;
+  right: 0px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+a:active{
+  color: inherit !important;
+}
+
+.post-container-wrapper{
+  position: relative;
+  /* height: 200px; */
+}
+
+.post-container{
+  width: 98%;
+  position: relative;
+  top: 0px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+
+.public-post-popup > .post-type-options, .public-post-edit-popup > .post-type-options, .poll-box > .post-type-options, .question-box > .post-type-options{
+  height: 28px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+  background-color: #f7f7f7;
+}
+
+.public-post-popup > .post-type-options > a, .public-post-edit-popup > .post-type-options > a, .poll-box > .post-type-options > a, .question-box > .post-type-options > a{
+  position: relative;
+  top: 5px;
+  font-size: 16px;
+  font-family: "Trebuchet MS";
+  padding: 5px 6px;
+  left: 0px;
+  /* border: 1px solid grey; */
+  margin-right: -4px;
+  color: black;
+}
+
+.post-container-header{
+  position: relative;
+  margin-top: 5px;
+  width: 100%;
+  outline: none;
+  resize: none;
+  /* padding: 10px -10px 10px 10px; */
+  border-bottom: 1px solid #3c8dbc;
+}
+.post-container > .post-container-header > .display-pic{
+  position: absolute;
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  left: 2px;
+  border-radius: 80px;
+  margin-top: 5px;
+  /* border: 1px solid red; */
+}
+
+.post-container-header > textarea{
+  height: auto;
+  display: inline-block;
+  position: relative;
+  left: 14%;
+  top: 0;
+  width: 85%;
+  border: 0;
+  outline: none;
+  resize: none;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Trebuchet MS";
+  overflow-y: hidden !important;
+}
+
+.post-container > .post-container-body{
+  position: relative;
+  top: 0px;
+  height: auto;
+  /* border: 1px solid black; */
+  background-color: white;
+}
+
+.post-container > .post-container-body > span{
+  font-family: "Trebuchet MS";
+}
+
+.post-container > .post-container-body > .trend-box{
+  border-top: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* trend-box styling */
+
+.trend-box > .trend-list{
+  /* padding: 10px 15px; */
+}
+
+.trend-box > .trend-list > .trend-list-item{
+  display: inline-block;
+  list-style: none;
+  padding: 5px 10px;
+  background-color: #367fa9;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.trend-box > .trend-list > .trend-list-item > span{
+  font-size: 14px;
+  color: white;
+  font-family: "Trebuchet MS";
+  font-weight: normal;
+}
+
+/* trend-box styling ends */
+
+a{
+  text-decoration: none;
+}
+
+.display-pic > img{
+  height: inherit;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.post-elements{
+  /* margin-top: 22px; */
+  /* height: 25px; */
+  position: relative;
+  width: inherit;
+  padding-bottom: 10px;
+  /* border: 1px solid black; */
+}
+
+.post-elements > .post-media{
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  /* border: 1px solid black; */
+  left: 12%;
+  bottom: -5px;
+}
+
+.post-elements > .post-media > span{
+  padding-left: 7px;
+  /* color: red !important; */
+}
+
+.post-elements > .react-post{
+  display: inline-block;
+  position: relative;
+  float: right;
+  padding-right: 5px;
+  /* margin-top: -2px; */
+}
+
+.post-elements > .react-post > span{
+  position: relative;
+  bottom: -4px;
+  padding-left: 5px;
+  color: #367fa9;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: lighter;
+}
+
+.fa-question-circle{
+  color: #3c8dbc;
+}
+
+.fa-hashtag{
+  font-weight: lighter !important;
+}
+
+.post-elements > .post-media > span > a > .fa-image, .post-elements > .post-media > span > a > .fa-video-camera{
+  color: #367fa9 !important;
+}
+
+/* trending-tool-tips */
+
+.react-post > .tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.react-post > .tooltip > .tooltip-text-tags{
+    visibility: hidden;
+    width: 82px;
+    font-size: 12px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -40px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.react-post > .tooltip .tooltip-text-tags::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-text-tags {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* trending-tool-tips ends */
+
+.submit-post{
+  position: relative;
+  border-top: 1px solid #ccc;
+  background-color: #f7f7f7;
+  top: 0px;
+  width: 100%;
+  height: 30px;
+}
+
+/* .submit-post > i{
+  position: absolute;
+  display: inline-block;
+  right: 70px;
+  top: 7px;
+  z-index: 1;
+  color: white;
+} */
+
+.submit-post > button{
+  display: inline-block;
+  position: absolute;
+  bottom: 1px;
+  right: 10px;
+  background-color: #367fa9;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 0px;
+}
+
+/* public post popup ends */
+
+/* poll popup */
+.poll-option {
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 10px;
+  }
+
+  .fa-plus-circle{
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    color: #367fa9;
+    cursor: pointer;
+  }
+
+  .submit-post > span > button{
+    display: inline-block;
+    position: absolute;
+    bottom: 3px;
+    right: 10px;
+    background-color: #367fa9;
+    color: white;
+    width: 55px;
+  }
+
+  .cancel-poll, .cancel-ask{
+    position: absolute;
+    width: 100px !important;
+    right: 10.8% !important;
+  }
+
+.duration{
+  margin-left: 10px;
+  margin-top: 2px;
+  font-weight: bolder;
+  outline: none;
+  padding: 4px 0px;
+  color: white;
+  background-color: #367fa9;
+  border: none;
+  border-radius: 10px;
+}
+
+/* poll popup ends */
+
+/* create post ends */
+
+/* user intro */
+
+.user-wigid > .wigid-border > .user-wigid-header{
+  position: relative;
+  top: 0;
+  left: -5px;
+  margin-right: -10px !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+  padding: 1px 5px;
+}
+
+.user-wigid > .wigid-border > .user-wigid-header > span{
+  /* color: #367fa9;
+  font-weight: 600;
+  font-family: "Trebuchet MS"; */
+  color: #000;
+}
+
+.user-wigid > .wigid-border > .user-wigid-header > .fa-info-circle,
+.user-wigid > .wigid-border > .user-wigid-header > .fa-clock-o{
+  color: #367fa9;
+}
+
+.user-intro-container{
+  /* border: 1px solid black; */
+  height: auto;
+}
+
+.user-intro-container > .user-intro > *{
+  padding: 5px 0px;
+  margin-left: 10px;
+  color: #367fa9;
+}
+
+.user-intro-container > .user-intro > div > span{
+  /* font-family: "Trebuchet MS"; */
+  font-size: 12px;
+  font-weight: 0 !important;
+  margin-left: 2px;
+  color: #000;
+
+}
+
+.caret {
+  width: 0px;
+  /* height: 15px; */
+  position: absolute;
+  left: 4%;
+  top: 18px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid #ecf0f5;;
+}
+
+/* user intro ends */
+
+.reminder-box{
+  height: 200px;
+}
+
+.big-icon{
+  /* border: 1px solid black; */
+  height: 60px;
+  width: 27%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto !important;
+  font-size: 100px !important;
+  color: #367fa9;
+}
+
+/* basic-post-container */
+
+.basic-post-container{
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 10px 10px 4px;
+  /* border: 1px solid black; */
+  box-shadow: 0 0 0.5px grey;
+  margin-top: 4px;
+  /* margin-bottom: 10px; */
+  background-color: white;
+}
+
+.basic-post-container > .basic-post-container-header{
+  position: relative;
+  top: 0px !important;
+  height: auto;
+  width: 100%;
+  /* border-bottom: 1px solid #cccccc; */
+  /* padding-bottom: 10px !important; */
+  /* border: 1px solid black; */
+}
+
+.basic-post-container > .basic-post-container-header > .profile-pic{
+  position: absolute;
+  display: inline-block !important;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.basic-post-container > .basic-post-container-header > .profile-pic > img{
+  box-shadow: 0px 0 3px #367fa9;
+}
+
+.basic-post-container > .basic-post-container-header > .user-description{
+  position: relative;
+  left: 48px;
+  display: inline-block !important;
+  color: #367fa9;
+  font-weight: 600;
+  font-family: "Trebuchet MS";
+  width: 84%;
+}
+
+.basic-post-container > .basic-post-container-header > .user-description > .fa{
+  font-size: 13px;
+}
+
+.basic-post-container > .basic-post-container-header > .user-description > a{
+  font-size: 13px !important;
+  color: inherit !important;
+}
+
+.basic-post-container > .basic-post-container-header > .user-description > span,
+.basic-post-container > .basic-post-container-header > .user-description > p{
+  display: block;
+  color: #808080;
+  font-weight: lighter;
+  font-size: 10px;
+  margin: 8px 0;
+  line-height: 50%;
+}
+
+.basic-post-container > .basic-post-container-header > .caret-down{
+  position: relative;
+  right: 0px;
+  top: 0px;
+  padding: 0px !important;
+  cursor: pointer;
+}
+
+.basic-post-container > .basic-post-container-body{
+  border-bottom: 1px solid #cccccc;
+}
+
+.basic-post-container > .basic-post-container-body > .post-type-1,
+.basic-post-container > .basic-post-container-body > .post-type-2{
+  height: auto;
+  position: relative;
+  top: 0;
+  width: auto;
+  margin: 0 15px;
+  /* border-bottom: 1px solid black; */
+  /* margin: 29px 20px 20px 20px; */
+  /* margin: 15px 8px 5px; */
+  /* z-index: 0; */
+}
+
+.basic-post-container > .post-type-status{
+  /* background-color: yellowgreen !important; */
+  /* min-height: 300px; */
+  height: auto;
+}
+
+.basic-post-container > .post-type-status > .post-type-1 > .status,
+.basic-post-container > .post-type-status > .post-type-2 > .status{
+  /* padding: 10px 40px; */
+  /* border-top: 1px solid black; */
+  /* display: flex; */
+  /* width: 600px;
+  vertical-align: middle;
+  text-align: center; */
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.basic-post-container > .post-type-status > .post-type-1 > .status > p,
+.basic-post-container > .post-type-status > .post-type-2 > .status > p{
+  position: relative;
+  margin: 5px 0px !important;
+  font-size: 16px !important;
+  line-height: 20px;
+  padding: 0px;
+  font-family: "Segoe UI",Arial,sans-serif;
+  color: black;
+  width: 100% !important;
+  text-align: center;
+  text-align: justify;
+  text-justify: inter-word;
+  white-space:pre-wrap;
+}
+
+.basic-post-container > .post-type-status > .post-type-1 > .status > p > .tag-link,
+.basic-post-container > .post-type-status > .post-type-2 > .status > p > .tag-link{
+  color: #3c8dbc;
+}
+
+.basic-post-container > .post-type-status > .post-type-1 > .status > p > .tag-link:hover,
+.basic-post-container > .post-type-status > .post-type-2 > .status > p > .tag-link:hover{
+  color: red !important;
+  text-decoration: underline !important;
+}
+
+.basic-post-container > .basic-post-container-body > div > span{
+  font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333; */
+}
+
+.basic-post-container > .response-stats{
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+.basic-post-container > .response-stats > span{
+  font-size: 12px;
+  color: grey;
+  margin-left: 8px;
+}
+
+.basic-post-container > .basic-post-response-btns{
+  height: auto;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+ul{
+  /* border: 1px solid red; */
+  position: relative;
+  top: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
+.basic-post-container > .basic-post-response-btns > ul > a > li{
+  /* width: 33.333% !important; */
+}
+
+.basic-post-container > .basic-post-response-btns > ul > a > li{
+  position: relative !important;
+  display: inline-block !important;
+  width: 33.333%;
+  box-sizing: border-box;
+  margin-right: -4px;
+  padding: 15px 0;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-top: none;
+}
+
+.basic-post-container > .basic-post-response-btns > ul > a > li > span > span,
+.basic-post-container > .basic-post-response-btns > ul > a > li > span > i{
+  padding-left: 10px;
+  font-size: 16px;
+  /* border: 1px solid black; */
+}
+
+.basic-post-container > .basic-post-response-btns > ul > a > li > span > i{
+  color: #367fa9;
+}
+
+.basic-post-container > .basic-post-response-btns > ul > a > li > span > span{
+  color: #333;
+  font-weight: 600;
+}
+
+.basic-post-comment-box{
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff !important;
+  box-shadow: 0 0 0.5px grey;
+}
+
+.basic-post-comment-box > .profile-pic{
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  border-radius: 25px;
+  margin: 12px 5px 0px;
+}
+
+.basic-post-comment-box > .comment-field{
+  display: inline-block;
+  position: relative !important;
+  top: -14px !important;
+  margin: 0px;
+  width: 88%;
+}
+
+.basic-post-comment-box > .comment-field > input{
+  width: 100% !important;
+  height: 30px;
+  padding: 0 10px;
+  word-wrap: wrap;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background: #eaf2f6;
+}
+
+/* if anything is wrong, check this */
+/* .fa{
+  width: auto !important;
+} */
+
+/* Comments display list */
+
+.comment-display-area{
+  display: block;
+  background: #f7f7f7;
+  position: relative;
+  box-shadow: 0 0 0.5px grey;
+  padding: 5px;
+  /* padding-top: 10px; */
+}
+
+.comment-display-area > .comment-list{
+  /* background: #e5e5e5; */
+}
+
+.comment-display-area > .comment-list > .comment-list-item{
+  list-style: none;
+  display: block;
+  /* background-color: #e5e5e5;
+  border-radius: 20px;
+  margin-top: 5px; */
+}
+
+.comment-display-area > .comment-list > .comment-list-item > .comment-content{
+  /* background-color: #d6e5ed; */
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  box-shadow: 0.1px grey;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+}
+
+.comment-display-area > .comment-list > .comment-list-item > .comment-content > .user-dp{
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  border-radius: 25px;
+  margin-top: 3px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+}
+
+.comment-display-area > .comment-list > .comment-list-item > .comment-content > .user-desc{
+  display: inline-block;
+  position: absolute;
+  margin: 8px 0 0 2px;
+}
+
+.comment-display-area > .comment-list > .comment-list-item > .comment-content > .user-desc > a{
+  /* link */
+  font-size: 13px;
+  color: #367fa9;
+  font-weight: 600;
+  font-family: "Trebuchet MS";
+  position: relative;
+  top: -5px;
+  left: 5px;
+}
+
+.comment-display-area > .comment-list > .comment-list-item > .comment-content > .user-comment{
+  margin: -20px 0 0 45px;
+}
+
+.comment-display-area > .comment-list > .comment-list-item > .comment-content > .user-comment > p{
+  padding: 0;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  text-align: justify;
+  font-size: 13px;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif !important;
+}
+
+.comment-display-area > .comment-list > .comment-list-item > .comment-react-box{
+  margin: 0px 45px;
+  padding-bottom: 5px;
+}
+
+.comment-display-area > .comment-list > .comment-list-item > .comment-react-box > a{
+  font-size: 12px;
+}
+
+/* Comments display list ends */
+
+/* React buttons on hover */
+
+.basic-post-container > .basic-post-container-body > .post-type-1 > .post-tinted{
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 999;
+  border-radius: 50%;
+}
+
+.basic-post-container > .basic-post-container-body > .post-type-2 > .post-tinted{
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 999;
+  border-radius: 50%;
+}
+
+.react-circle{
+  background-color: white;
+  height: 20%;
+  width: 20%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+  bottom: 0;
+  text-align: center;
+  margin: auto;
+  /* z-index: 999; */
+  border-radius: 50%;
+}
+
+.react-options{
+  list-style: none;
+}
+
+.react-options > #save{
+  /* on left */
+  position: relative;
+  top: 105px;
+  right: 103px;
+
+}
+
+.react-options > #pin{
+  /* on top */
+  position: relative;
+  top: 50px;
+  left: 45px;
+}
+
+.react-options > #report{
+  /* at bottom */
+  position: relative;
+  top: 252px;
+  right: 40px;
+
+}
+
+.react-options > #comment{
+  /* on right */
+  position: relative;
+  left: 102px;
+  top: 185px;
+
+}
+
+.react-options > #save > .react-circle,
+.react-options > #pin > .react-circle,
+.react-options > #report > .react-circle,
+.react-options > #comment > .react-circle{
+  height: 70px !important;
+  width: 70px !important;
+}
+
+.react-options > #save,
+.react-options > #pin,
+.react-options > #report,
+.react-options > #comment,
+.post-tinted > #like{
+  font-size: 25px;
+  transform: translateX(0px);
+  transform: rotate(25deg);
+  cursor: pointer;
+}
+
+.react-options > li > .react-circle > .fa-bookmark,
+.react-options > li > .react-circle > .fa-thumb-tack,
+.react-options > li > .react-circle > .fa-flag-checkered,
+.react-options > li > .react-circle > .fa-comments,
+.post-tinted > #like > .fa-thumbs-up{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  color: #3c8dbc;
+}
+
+.react-options > li > .react-circle:hover,
+.react-options > li > .react-circle:hover,
+.react-options > li > .react-circle:hover,
+.react-options > li > .react-circle:hover,
+.post-tinted > #like:hover{
+  background-color: #3c8dbc;
+}
+
+.react-options > li > .react-circle:hover > .fa-bookmark,
+.react-options > li > .react-circle:hover > .fa-thumb-tack,
+.react-options > li > .react-circle:hover > .fa-flag-checkered,
+.react-options > li > .react-circle:hover > .fa-comments,
+.post-tinted > #like:hover > .fa-thumbs-up{
+  color: white;
+}
+
+.post-tinted{
+  display: none;
+}
+
+.post-tinted:hover{
+  display: none;
+  transform: translateX(0px);
+  transform: rotate(-25deg);
+  transition-duration: 0.1s;
+}
+
+.react-post-icon{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #367fa9;
+}
+
+.change-btn > .react-post-icon > i{
+  color: white !important;
+}
+
+.react-box > .react-btn{
+  position: relative;
+  left: 0;
+  display: inline-block !important;
+  cursor: pointer;
+}
+
+.react-box > .react-btn > span{
+  display: none;
+  position: relative;
+  /* top: -9.4px; */
+  /* margin-left: 2px; */
+  margin-right: -6% !important;
+  padding-left: 6px;
+  /* border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border: 1px solid #367fa9;
+  background-color: #367fa9; */
+  color: white;
+  font-size: 14px;
+  /* cursor: pointer; */
+}
+
+.react-box > .react-btn > .show{
+  display: inline-block !important;
+}
+
+.react-post-icon:hover{
+  background-color: #367fa9;
+}
+
+.react-post-icon:hover > i{
+  color: white;
+}
+
+.react-post-icon > i{
+  color: #367fa9;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+/* .react-post-icon:hover ~ .post-tinted{
+  display: block;
+} */
+
+/* .basic-post-container > .basic-post-container-body > .post-tinted{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 1 !important;
+  height: inherit;
+} */
+
+.basic-post-container > .basic-post-container-body > .post-type-2 > .react-box{
+  /* position: relative;
+  bottom: 0px; */
+  margin: 10px 0 5px;
+  height: auto;
+  width: auto;
+}
+
+
+/* React buttons on hover ends */
+
+/* Basic-post-container caret popup */
+
+.caret-popup{
+  display: none;
+  height: auto;
+  padding-bottom: 1px;
+  width: 95px;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background: #fff;
+  border: 1px solid #d6e5ed;
+  box-shadow: 0 0 1px grey;
+  z-index: 1;
+}
+
+div.tooltip {
+	/* tooltip content styling in here; nothing to do with arrows */
+}
+
+/* shared with before and after */
+div.tooltip:before, div.tooltip:after {
+	content: ' ';
+	height: 0;
+	position: absolute;
+	width: 0;
+	border: 7px solid transparent; /* arrow size */
+}
+
+/* these arrows will point up */
+
+/* top-stacked, smaller arrow */
+div.tooltip:before {
+	border-bottom-color: #fff;  /* arrow color */
+
+	/* positioning */
+	position: absolute;
+	top: -14px;
+	right: 3px;
+	z-index: 2;
+}
+
+/* arrow which acts as a background shadow */
+div.tooltip:after {
+	border-bottom-color: #ccc;  /* arrow color */
+  box-shadow: 0 0 0px black;
+	/* positioning */
+	position: absolute;
+	top: -15px;
+	right: 3px;
+	z-index: 1;
+}
+
+.caret-popup > .tooltip > .post-popup-menu > .post-popup-list-item{
+  list-style: none;
+  padding: 5px 10px;
+  cursor: pointer !important;
+  border-bottom: 1px solid #9abfd4;
+}
+
+.caret-popup > .tooltip > .post-popup-menu > .post-popup-list-item:hover{
+  background: #aecbdc;
+}
+
+.caret-popup > .tooltip > .post-popup-menu > .post-popup-list-item > i{
+  display: inline-block !important;
+}
+
+.caret-popup > .tooltip > .post-popup-menu > .post-popup-list-item > a{
+  display: inline-block !important;
+}
+
+/* Basic-post-container caret popup ends */
+
+
+/* basic-post-container ends */
+
+/*******
+*
+*------------------------ Clubs page ---------------------
+*
+*******/
+
+.btn-follow{
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
+}
+
+.event-response-btns{
+  position: absolute;
+  bottom: 12px;
+  right: 8%;
+}
+
+.btn-follow > button{
+  width: auto !important;
+  padding: 5px 10px;
+  background-color: #1da1f2;
+  opacity: 0.8;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: "Segoe UI",Arial,sans-serif;
+  color: black;
+  text-align: center;
+}
+
+.btn-follow > #btn-follow:hover{
+  background-color: red;
+  text-decoration: underline;
+}
+
+.btn-follow > #apply-btn:hover{
+  background-color: yellowgreen;
+  text-decoration: underline;
+}
+
+/* ------------- left section --------------*/
+/*
+* Event container
+ */
+
+ /* .active{
+   display: block !important;
+ } */
+
+ .event-wigid{
+   /* display: none; */
+ }
+
+ .event-wigid > .event-banner > img{
+   position: relative;
+   top: 5px;
+   height: 220px;
+   width: 100%;
+ }
+
+ .event-wigid > .event-banner > .event-banner-hover{
+   position: absolute;
+   top: 5px;
+   height: 220px;
+   width: 100%;
+   box-sizing: border-box;
+ }
+
+ .event-wigid > .event-banner > .event-banner-hover{
+   background-color: rgba(0, 0, 0, 0.4);
+   /* opacity: 0.6; */
+ }
+
+ .event-wigid > .event-banner > .event-banner-hover:hover{
+   background-color: rgba(0, 0, 0, 0.6);
+   /* opacity: 0.6; */
+ }
+
+ .event-wigid > .event-banner > .event-banner-hover:hover > .event-info{
+   /* display: block; */
+ }
+
+ .event-wigid > .event-banner > .event-banner-hover > .event-info{
+   /* display: none; */
+ }
+
+ .event-wigid > .event-banner > .event-banner-hover > .event-info > .left-section{
+   width: 15px;
+   position: relative;
+   display: inline-block;
+   left: 0;
+   float: left;
+   height: 220px;
+   width: 8%;
+   margin: auto 0;
+   color: white;
+   padding: 5px;
+   /* border: 1px solid white; */
+   cursor: pointer;
+ }
+
+ .event-wigid > .event-banner > .event-banner-hover > .event-info > .right-section{
+   position: absolute;
+   display: inline-block;
+   right: 0;
+   width: 8%;
+   margin: auto 0;
+   /* margin-top: -5%; */
+   color: white;
+   padding: 5px;
+   height: 220px;
+   /* border: 1px solid white; */
+   cursor: pointer;
+ }
+
+ .middle-section{
+   position: absolute;
+   display: inline-block;
+   /* border: 1px solid yellow; */
+   width: 76%;
+   height: 220px;
+ }
+
+ .middle-section > .event-header > center > span{
+   color: white;
+   font-family: "Trebuchet MS";
+   position: relative;
+   top: 10px;
+ }
+
+ .middle-section > .event-footer{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+ }
+
+ .middle-section > .event-footer > center > p{
+   color: white;
+   display: block;
+   font-weight: 200;
+   font-family: "Trebuchet MS";
+   line-height: 40%;
+ }
+
+ .event-date{
+   color: yellowgreen !important;
+ }
+
+.event-timer{
+    position: relative;
+    left: 30%;
+    width: 80%;
+}
+
+.event-wigid > .event-banner > .event-banner-hover > .event-info > .right-section > i,
+.event-wigid > .event-banner > .event-banner-hover > .event-info > .left-section > i{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 15px;
+  height: 0;
+  margin: auto;
+  color: #b2b2b2;
+}
+
+.event-wigid > .event-banner > .event-banner-hover > .event-info > .right-section:hover > i,
+.event-wigid > .event-banner > .event-banner-hover > .event-info > .left-section:hover > i{
+  color: white;
+}
+
+
+/* ---------------------- Event ------------------------------  */
+* {
+    box-sizing: border-box;
+}
+
+body {
+  height: auto !important;
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: red;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #303246;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #303246 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.event-description {
+    padding: 20px 30px;
+    background-color: #303246;
+    position: relative;
+    border-radius: 6px;
+    color: white;
+}
+
+.event-content > center > h3{
+  font-size: 22px;
+  /* text-decoration: underline; */
+  margin-bottom: 5px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #0A252E transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+/* Event Rules block */
+
+.event-wigid{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  height: auto;
+  width: 100%;
+}
+
+.event-wigid-box{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  height: auto;
+  width: 60%;
+}
+
+.event-wigid-effect{
+  height: inherit;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.event-wigid-box > .event-wigid-effect > center > .event-img-box{
+  position: relative;
+  height: 280px;
+  width: 280px;
+  /* border: 10px solid yellow; */
+}
+
+.event-wigid-box > .event-wigid-effect > center > .event-img-box > img{
+  height: inherit;
+  width: inherit;
+}
+
+.img-tinted{
+  display: block;
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  top: 0;
+}
+
+.img-tinted:hover{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.name-tag{
+  height: 50px;
+  width: auto;
+  background-color: black;
+  position: absolute;
+  bottom: 30px;
+  padding-top: 6px;
+  padding-right: 20px;
+}
+
+.date-tag{
+  height: 50px;
+  width: auto;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  padding-top: 6px;
+  padding-right: 20px;
+}
+
+.event-name-tag{
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  padding-top: 15px;
+  padding: auto 0px;
+}
+
+.name-tag > span,
+.name-tag > p,
+.date-tag > span,
+.date-tag > p,
+.event-name-tag > span,
+.event-name-tag > p{
+  margin: auto 0 auto 5px;
+  font-family: "Trebuchet MS";
+}
+
+.img-tinted:hover .name-tag,
+.img-tinted:hover .date-tag,
+.img-tinted:hover .event-name-tag{
+  background-color: red !important;
+}
+
+.img-tinted:hover .name-tag > span,
+.img-tinted:hover .name-tag > p,
+.img-tinted:hover .date-tag > span,
+.img-tinted:hover .date-tag > p,
+.img-tinted:hover .event-name-tag > span,
+.img-tinted:hover .event-name-tag > p{
+  color: white !important;
+}
+
+.image-grid{
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.btn > button{
+  height: 40px !important;
+  width: 250px !important;
+  background-color: red;
+  border-radius: 2px;
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+}
+
+/* ----------------------- About me ------------------------- */
+.user-info{
+  border: 1px solid #ccc !important;
+  background-color: #fff;
+  margin-top: 3px;
+}
+
+.navigation-wrapper{
+  height: auto;
+  min-height: 360px !important;
+}
+
+.manage-wrapper{
+  height: auto;
+  min-height: 160px !important;
+}
+
+.navigation-wrapper > ul{
+  position: absolute;
+  display: inline-block;
+  list-style: none;
+  width: 30%;
+  border-right: 1px solid #e5e5e5;
+}
+
+.navigation-wrapper > ul > a > i{
+  color: #367fa9;
+  padding: 0 30px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.navigation-wrapper > ul > a > i:hover{
+  background: #e5e5e5;
+}
+
+.navigation-wrapper > ul > a > .active{
+  border-left: 4px solid #367fa9;
+  background: #e5e5e5;
+}
+
+.navigation-wrapper > ul > a > .active > li{
+  color: #367fa9;
+  /* font-weight: 600; */
+  -webkit-font-smoothing: antialiased;
+  font-family: "Trebuchet MS";
+}
+
+.navigation-wrapper > ul > a > i > li{
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Trebuchet MS";
+  color: #6d6e71;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 5px;
+  margin: 5px 0px;
+}
+
+.navigation-wrapper > ul > a > ol{
+  margin: 10px -5px;
+  list-style: none;
+}
+
+.navigation-wrapper > ul > a > .inline-list > li{
+  display: inline-block;
+  /* padding: 4px;
+  cursor: pointer;
+  border-radius: 15px;
+  box-sizing: border-box !important; */
+}
+
+.navigation-wrapper > ul > a > ol > li > i{
+  color: maroon;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 15px;
+  box-sizing: border-box !important;
+}
+
+/* .fa-camera{
+  border: 2px solid red;
+  width: auto;
+} */
+
+.navigation-wrapper > ul > a > ol > li > i:hover{
+  color: yellow;
+  background-color: green;
+  border-radius: 15px;
+}
+
+.intrest-title{
+  display: none;
+}
+
+.navigation-wrapper > ul > a > ol > li > i:hover > .intrest-title{
+  display: inline-block;
+  padding: 0px 5px 0px 2px;
+}
+
+.navigation-wrapper > #personal-info,
+.navigation-wrapper > #personal-statement,
+.navigation-wrapper > #education,
+.navigation-wrapper > #achievements,
+.navigation-wrapper > #work-exp,
+.navigation-wrapper > #skills,
+.navigation-wrapper > #interests,
+.navigation-wrapper > #languages,
+.navigation-wrapper > #contact{
+  display: none;
+}
+
+.navigation-wrapper > .active{
+  display: inline-block !important;
+}
+
+.navigation-wrapper > .info-display{
+  position: relative;
+  left: 30%;
+  display: inline-block;
+  width: 70%;
+  border-left: 1px solid #ccc;
+}
+
+.info-display > .header{
+  padding: 0 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.info-display > .header > h4{
+  display: inline-block;
+  font-family: "Trebuchet MS";
+  margin: 10px 0;
+  color: #367fa9;
+}
+
+.popup-form > div > div > .header > h4{
+  display: inline-block;
+  font-family: "Trebuchet MS";
+  margin: 10px;
+  color: #367fa9;
+}
+
+.info-display > .header > i,
+.popup-form > div > div > .header > i{
+  display: inline-block;
+  color: #367fa9;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navigation-wrapper > .info-display > .body > table,
+.popup-form > div > form > .body > table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.navigation-wrapper > .info-display > .body > table > tbody > tr > td,
+.popup-form > div > form > .body  > table > tbody > tr > td{
+  padding: 5px 10px;
+  font-family: "Trebuchet MS";
+  color: #4c4c4c;
+  text-align: justify;
+}
+
+.single-edit > form > .body > div > h4,
+.single-edit > form > .body > div > input,
+.single-edit > form > .body > div > textarea,
+.info-display > form > .body > div > textarea{
+  color: #4c4c4c;
+  font-family: "Trebuchet MS";
+  margin: 8px 10px;
+  display: inline-block;
+}
+
+.fa{
+  cursor: pointer;
+}
+
+.single-edit > form > .body > div > input{
+  width: 65%;
+  float: right;
+  border: 0;
+  border-bottom: 1px solid #4c4c4c;
+  outline: none;
+}
+
+.single-edit > form > .body > div > textarea,
+.info-display > form > .body > div > textarea{
+  width: 96%;
+  resize: none;
+  height: auto;
+  font-size: 16px !important;
+  border: 0;
+  border-bottom: 1px solid #4c4c4c;
+  outline: none;
+  overflow: hidden;
+}
+
+.info-display > form > .body > div > p{
+  margin: 10px;
+  font-size: 12px;
+  color: red;
+  font-weight: bold;
+}
+
+.single-edit > form > .body > div > select{
+  display: block;
+  margin: 5px 10px;
+  width: 96%;
+  padding: 5px;
+}
+
+.single-edit > form > .body > div > h4 > input{
+  outline: none;
+  height: 15px;
+  width: 15px;
+}
+
+.single-edit > form > .footer{
+  padding: 10px;
+}
+
+.single-edit > form > .footer > button{
+  width: auto;
+  padding: 5px 10px;
+  border-radius: 0;
+  background-color: #367fa9;
+  color: White;
+  float: right;
+}
+
+
+.navigation-wrapper > .info-display > .body > table > tbody > tr > td > a,
+.popup-form > div > form > .body  > table > tbody > tr > td > a{
+  text-decoration: underline;
+  color: #367fa9;
+}
+
+.navigation-wrapper > .info-display > .body > table > tbody > tr > .title,
+.popup-form > div > form > .body  > table > tbody > tr > .title{
+  color: #367fa9;
+  text-align: justify;
+}
+
+.education > .tbl-border{
+  border-bottom: 1px solid black !important;
+}
+
+.navigation-wrapper > .info-display > .body > table > .education > tr > td,
+.popup-form > div > form > .body > .pinfo-form > table > .education > tr > td{
+  padding: 5px 10px;
+  font-family: "Trebuchet MS";
+  color: #4c4c4c;
+  font-size: 18px;
+}
+
+.navigation-wrapper > .info-display > .body > table > .education > tr > .th,
+.popup-form > div > form > .body > .pinfo-form > table > .education > tr > .th{
+  font-size: 12px;
+  width: 20%;
+  text-align: left !important;
+}
+
+.navigation-wrapper > .info-display > .body > table > .education > tr > .title,
+.popup-form > div > form > .body > .pinfo-form > table > .education > tr > .title{
+  color: #367fa9;
+  font-size: 14px;
+}
+
+.navigation-wrapper > .info-display > .body > p{
+  font-family: "Trebuchet MS";
+  padding: 10px;
+  line-height: 20px;
+}
+
+.navigation-wrapper > .info-display > .body > div{
+  border-top: 1px solid #ccc;
+}
+
+.navigation-wrapper > .info-display > .body > div > p{
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  padding: 0 10px;
+  color: red;
+}
+
+.navigation-wrapper > .info-display > .body > ol,
+.navigation-wrapper > .info-display > .body > ul{
+  list-style: none;
+  padding: 0 10px;
+}
+
+.navigation-wrapper > .info-display > .body > ul{
+  margin: 5px 10px !important;
+}
+
+.navigation-wrapper > .info-display > .body > ul > li{
+  display: inline-block;
+  border: 1px solid #ccc;
+  font-family: "Trebuchet MS";
+  padding: 5px 15px;
+  margin-bottom: 5px;
+}
+
+.navigation-wrapper > .info-display > .body > ul > li > i{
+  font-size: 50px;
+  color: #367fa9;
+}
+
+.navigation-wrapper > .info-display > .body > ul > li > div{
+  display: inline-block;
+}
+
+.navigation-wrapper > .info-display > .body > ul > li > div > .title{
+  color: #4c4c4c;
+  position: relative;
+  top: -10px;
+}
+
+.navigation-wrapper > .info-display > .body > ul > li > div > p{
+  font-size: 14px;
+  margin: 0;
+  position: relative;
+  top: -7px;
+  color: #808080;
+}
+
+.navigation-wrapper > .info-display > .body > ol > li{
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #367fa9;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.navigation-wrapper > .info-display > .body > ol > li:hover{
+  text-decoration: underline;
+}
+
+.popup-form > .info-display{
+  display: none;
+  position: relative;
+  transform: translate(0px, -50%);
+  top: 50%;
+  background-color: white;
+  overflow-y: auto;
+  box-shadow: 0 0 1px black;
+  padding-bottom: 10px;
+  height: auto;
+  max-height: 50%;
+}
+
+.active{
+  display: block !important;
+}
+
+/* Edit information popup */
+
+.popup-form{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto !important;
+  width: 38%;
+  z-index: 5;
+  margin: auto !important;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.popup-form > .info-display > form > .body > div > ol{
+  list-style: none;
+  margin: 16px;
+  padding: 0;
+}
+
+.popup-form > .info-display > form > .body > div > ol > li{
+  padding: 5px 20px;
+  border-radius: 50px;
+  background: #367fa9;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.popup-form > .info-display > form > .body > div > ol > li:hover,
+.popup-form > .info-display > form > .body > div > ol > li:hover::after{
+  content: 'x';
+  background: red;
+  margin: 0;
+}
+
+.popup-form > .info-display > form > .body > div > ol > li:hover::after{
+  font-weight: 600;
+  padding: 1px 4px;
+}
+
+.popup-form > .info-display > form > .body > div > h4{
+  margin: 10px;
+  font-family: "Trebuchet MS";
+}
+
+.popup-form > .info-display > form > .body > div > input{
+  width: 96%;
+  margin: 0px 10px;
+  padding: 5px;
+}
+
+.popup-form > .info-display > form > .body > div > select{
+  margin: 5px 10px;
+}
+
+.popup-form > .info-display > form > .footer{
+  padding: 10px;
+}
+
+.popup-form > .info-display > form > .footer > button{
+  width: auto;
+  padding: 5px 10px;
+  border-radius: 0;
+  background-color: #367fa9;
+  color: White;
+  float: right;
+  margin-right: 5px;
+}
+
+/* Edit information popup ends */
+
+/* challanges page */
+
+.no-challenge{
+  display: none;
+  position: relative;
+  height: auto;
+  width: auto;
+  border: 1px solid #bfbfbf;
+  margin-top: 5px;
+  padding: 80px;
+  margin-bottom: 5px;
+}
+
+.no-challenge > .heading > p{
+  font-size: 60px;
+  position: relative;
+  padding-top: 10px;
+  margin: 0 !important;
+  text-align: center;
+  color: #367fa9;
+  /* color: #663300; */
+}
+
+.no-challenge > h1{
+  text-align: center;
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  color: #367fa9;
+}
+
+.no-challenge > .create-btn > center > button,
+.create-challenge > .create-btn > center > button,
+.create-debate > .create-btn > center > button{
+  width: 35% !important;
+  padding: 5px 10px;
+  background-color: #1da1f2;
+  /* background-color: #663300; */
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: "Segoe UI",Arial,sans-serif;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.no-challenge > .create-btn > center > button:hover{
+  background-color: #663300;
+}
+
+.create-challenge,
+.create-debate{
+  display: none;
+  height: auto;
+  width: 100%;
+  position: relative;
+  border: 1px solid #bfbfbf;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.create-challenge > .header-title > h2,
+.create-debate > .header-title > h2{
+  text-align: center;
+  font-family: "Trebuchet MS";
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.create-challenge > .header-title > h2 > span > select,
+.create-debate > .header-title > h2 > span > select{
+  border: none;
+  font-size: 25px;
+  font-family: "Trebuchet MS";
+  color: #367fa9;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+.create-challenge > .header-title > h2 > span > select > option,
+.create-debate > .header-title > h2 > span > select > option{
+  font-size: 15px;
+}
+
+.create-challenge > .form-container > form > label,
+.create-challenge > .form-container > form  > input,
+.create-challenge > .form-container > form > .private > label,
+.create-challenge > .form-container > form > .private > input,
+.create-debate > .form-container > form > label,
+.create-debate > .form-container > form  > input,
+.create-debate > .form-container > form > .private > label,
+.create-debate > .form-container > form > .private > input{
+  display: block;
+  margin: 10px 0px;
+}
+
+.create-challenge > .form-container > form > input,
+.create-challenge > .form-container > form > select,
+.create-challenge > .form-container > form > .private > input,
+.create-debate > .form-container > form > input,
+.create-debate > .form-container > form > select,
+.create-debate > .form-container > form > .private > input{
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+.create-challenge > .form-container > form > .private,
+.create-debate > .form-container > form > .private{
+  display: none;
+}
+
+.create-challenge > .form-container > form > select,
+.create-debate > .form-container > form > select{
+  color: #367fa9;
+}
+
+.create-challenge > .form-container > form,
+.create-debate > .form-container > form{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Challenges section styling */
+.challenges-section,
+.reminders-section{
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: 5px 0px 0px 0px;
+  /* border: 0.2px solid grey; */
+  background: #fff;
+  box-shadow: 0 0 1px grey;
+  border-radius: 3px;
+  padding: 10px 10px 1px;
+}
+
+.challenges-section > h4,
+.reminders-section > h4{
+  font-size: 15px !important;
+  font-family: "Trebuchet MS";
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-left: 2px;
+}
+
+.challenges-section > .challenges-list > .challenges-list-item,
+.reminders-section > .reminders-list > .reminders-list-item{
+  list-style: none;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  background: #f5f5f5;
+}
+
+.challenges-section > .challenges-list > .challenges-list-item > .ch-icon,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-icon{
+  width: 20%;
+  font-size: 30px;
+  /* border: 1px solid red; */
+  position: absolute;
+  padding: 5px;
+}
+
+.challenges-section > .challenges-list > .challenges-list-item > .ch-icon > .fa,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-icon > .fa{
+  color: #367fa9;
+}
+
+.challenges-section > .challenges-list > .challenges-list-item > .ch-icon,
+.challenges-section > .challenges-list > .challenges-list-item > .ch-info,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-icon,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-info{
+  display: inline-block;
+}
+
+.challenges-section > .challenges-list > .challenges-list-item > .ch-info,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-info{
+  position: relative;
+  /* border: 1px solid blue; */
+  width: 75%;
+  left: 25%;
+}
+
+.challenges-section > .challenges-list > .challenges-list-item > .ch-info > span,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-info > span{
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  text-align: justify;
+}
+
+.challenges-section > .challenges-list > .challenges-list-item > .ch-info > div > .ch-date,
+.challenges-section > .challenges-list > .challenges-list-item > .ch-info > div > .ch-time,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-info > div > .rm-date,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-info > div > .rm-time{
+  font-size: 10px;
+  color: grey;
+}
+
+.challenges-section > .challenges-list > a > .ch-join{
+  height: 25px;
+  background: #3c8dbc;
+  margin-top: -14px;
+  margin-bottom: 4px;
+}
+
+.challenges-section > .challenges-list > a > .ch-join > p{
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  text-align: center;
+  padding-top: 4px;
+}
+/* Challenges section ends */
+
+/* Chatbox */
+
+.chatbox-area{
+  position: fixed;
+  bottom: 0;
+  right: 20%;
+}
+
+.chatbox{
+  display: inline-block;
+  height: 335px;
+  width: 290px;
+  background-color: #fff;
+  box-shadow: 0 0 1px grey;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.chatbox > .chat-head{
+  height: 8%;
+  width: auto;
+  background-color: #367fa9;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.chat-head > .chat-online,
+.chat-head > .chat-offline{
+  display: inline-block;
+  position: relative;
+  left: 25px;
+  top: 3px;
+}
+
+.chat-head > .chat-offline{
+  color: #ccc !important;
+}
+
+.chat-head > .chat-offline > .user-offline-icon{
+  position: relative;
+  height: 0px !important;
+  width: 0px !important;
+  border: 4px solid #e5e5e5;
+  background-color: #808080;
+  border-radius: 100px;
+  float: right;
+  right: 20px;
+  top: -4px;
+}
+
+.chatbox > .chat-body{
+  height: 82%;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  overflow: auto;
+}
+
+.chat-body > .msg-container,
+.chat-body > .msg-container-user{
+  margin: 5px;
+  padding: 2px;
+}
+
+.chat-body > .msg-container > .user-chat-dp,
+.chat-body > .msg-container-user > .user-chat-dp{
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+}
+
+.chat-body > .msg-container > .user-chat-dp > img,
+.chat-body > .msg-container-user > .user-chat-dp > img{
+  height: inherit;
+  width: inherit;
+  border-radius: 50%;
+}
+
+.chat-body > .msg-container > .chat-msg{
+  display: inline-block;
+  background-color: #367fa9;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  /* min-height: 35px; */
+  height: auto;
+  width: 78%;
+}
+
+.chat-body > .msg-container-user > .chat-msg{
+  display: inline-block;
+  background-color: #e5e5e5;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  /* min-height: 35px; */
+  height: auto;
+  width: 85%;
+}
+
+.chat-body > .msg-container > .chat-msg > p{
+  font-size: 13px;
+  padding: 10px 20px 10px 10px;
+  margin: 0;
+  color: white;
+}
+
+.chat-body > .msg-container-user > .chat-msg > p{
+  font-size: 13px;
+  padding: 10px 20px 10px 10px;
+  margin: 0;
+}
+
+.chatbox > .chat-head > .username,
+.chatbox > .chat-head > .chat-close,
+.chatbox > .chat-head > .chat-minimize{
+  display: inline-block;
+}
+
+.chatbox > .chat-head > .username > h3{
+  font-size: 13px;
+  margin: 0;
+  padding: 6px;
+  font-family: "Trebuchet MS";
+  font-weight: lighter;
+  color: #fff;
+}
+
+.chatbox > .chat-head > .chat-close,
+.chatbox > .chat-head > .chat-minimize{
+  padding: 6px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.chatbox > .chat-head > .chat-close > .fa,
+.chatbox > .chat-head > .chat-minimize > .fa{
+  margin-left: 4px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  cursor: pointer;
+}
+
+.chatbox > .chat-footer{
+  height: 10%;
+  width: auto;
+  padding: 3px 0 0 0;
+  border-top: 1px solid #ccc;
+}
+
+.chat-footer > .chat-options > .chat-input > form > input{
+  width: 90% !important;
+  padding: 2px 5px;
+  height: 28px;
+  outline: none;
+  border: none;
+}
+
+.chat-footer > .chat-options > .chat-input > form > .chat-react{
+  padding: 5px 7px;
+}
+
+/* Minimized chat */
+
+.chat-mini-head{
+  position: fixed;
+  bottom: 0;
+  width: 230px;
+  height: 30px;
+  background-color: red;
+  right: 20%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.chat-mini-head > .chat-offline,
+.chat-mini-head > .chat-online{
+  display: inline-block;
+  position: relative;
+  left: 25px;
+  top: 3px;
+}
+
+.chat-mini-head > .chat-offline > .user-offline-icon{
+  position: relative;
+  height: 0px !important;
+  width: 0px !important;
+  border: 4px solid #e5e5e5;
+  background-color: #808080;
+  border-radius: 100px;
+  float: right;
+  right: 20px;
+  top: -4px;
+}
+
+.chat-mini-head > .username{
+  display: inline-block;
+}
+
+.chat-mini-head > .username > h3{
+  font-size: 13px;
+  margin: 0;
+  padding: 6px;
+  font-family: "Trebuchet MS";
+  font-weight: lighter;
+  color: #fff;
+}
+
+.chat-mini-head > .chat-close,
+.chat-mini-head > .chat-minimize{
+  padding: 6px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.chat-mini-head > .chat-close > .fa,
+.chat-mini-head > .chat-minimize > .fa{
+  margin-left: 4px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+/* Mmini-inimized chat ends */
+
+/* Chatbox ends */
+
+/* Job profile */
+
+.content > .header > h3{
+  font-family: "Trebuchet MS";
+}
+
+.content > .header > .job-profile,
+.info-display > .job-profile{
+  display: block;
+  float: left;
+  height: auto !important;
+  width: 48.5% !important;
+  border: 1px solid #ccc !important;
+  margin: 5px;
+}
+
+.info-display > .job-profile{
+  width: 97% !important;
+  padding: 20px;
+  margin: 5px 10px;
+}
+
+.content > .header > .job-profile:hover,
+.info-display > .job-profile:hover{
+  border: 1px solid red;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.content > .header > .job-profile > .job-title > h4,
+.info-display > .job-profile > .job-title > h4{
+  font-family: Spectral;
+  font-size: 18px;
+  margin: 10px 20px;
+}
+
+.content > .header > .job-profile > .job-description > table,
+.info-display > .job-profile > .job-description > table{
+  margin: 10px 15px;
+}
+
+.content > .header > .job-profile > .job-description > table > tbody > tr > td,
+.info-display > .job-profile > .job-description > table > tbody > tr > td{
+  padding: 5px 5px 2px;
+  height: auto;
+  max-height: 400px;
+  white-space: wrap;
+  overflow: hidden;
+}
+
+.content > .header > .job-profile > .job-footer,
+.info-display > .job-profile > .job-footer{
+  padding: 10px;
+  text-align: center;
+}
+
+.content > .header > .job-profile > .job-footer > a,
+.info-display > .job-profile > .job-footer > a{
+  border: 1px solid red;
+  padding: 5px 20px;
+  margin-bottom: 5px;
+  border-radius: 30px;
+  color: #000;
+}
+
+.content > .header > .job-profile > .job-footer > a:hover,
+.info-display > .job-profile > .job-footer > a:hover{
+  background-color: red;
+  color: #fff;
+}
+
+/* Job profile ends */
+
+/* Job Posting */
+
+.job_posting_container > .header{
+  height: auto;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.job_posting_container > .header > h3{
+  margin: 5px;
+  font-size: 20px !important;
+  font-weight: 600;
+  color: #367fa9;
+  line-height: 1.1;
+  font-family: "Trebuchet MS";
+}
+
+.job_posting_container > .header > span{
+  margin: 5px;
+  line-height: 1.8;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(102, 102, 102);
+  font-family: "Trebuchet MS";
+}
+
+.job_posting_container > .header > table{
+  width: 100%;
+  text-align: left;
+  margin: 5px;
+}
+
+.job_posting_container > .header > table > tbody > tr > th{
+  color: #367fa9;
+  font-weight: 400;
+}
+
+.job_posting_container > .header > table > tbody > tr > td{
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.job_posting_container > .body{
+  border: 1px solid #ccc;
+  margin-top: 4px;
+  padding: 0px 10px 10px 10px;
+  margin-bottom: 15px;
+}
+
+.job_posting_container > .body > div > h4{
+  font-size: 18px;
+  color: rgb(102,102,102);
+  font-family: "Trebuchet MS";
+  font-weight: 600;
+}
+
+.job_posting_container > .body > div > p{
+  font-size: 16px;
+  font-weight: lighter !important;
+  font-family: 'Moolboran';
+  line-height: 1.5;
+  color: #4c4c4c;
+}
+
+.job_posting_container > .body > div > ul{
+  list-style: none;
+}
+
+.job_posting_container > .body > div > ul > li{
+  line-height: 1.5;
+  display: inline;
+  font-family: 'Moolboran';
+  color: #4c4c4c;
+}
+
+.job_posting_container > .body > div > ol > li,
+.job_posting_container > .body > div > span{
+  line-height: 2;
+  font-family: 'Moolboran';
+  color: #4c4c4c;
+}
+
+.job_posting_container > .body > .footer{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.job_posting_container > .body > .footer > a{
+  padding: 10px 50px;
+  border: 1px solid #4c4c4c;
+  border-radius: 50px;
+  color: #4c4c4c;
+}
+
+.job_posting_container > .body > .footer > a:hover{
+  background-color: #367fa9;
+  color: #fff;
+  border: 1px solid white;
+}
+
+/* Job Posting ends */
+
+/* Manage College page */
+
+.friends-section{
+  height: auto !important;
+  width: 100% !important;
+  margin: 5px 10px 5px 5px;
+  border: 0 !important;
+}
+
+.friend-container{
+  display: inline-block;
+  height: auto;
+  width: 48%;
+  border-bottom: 1px solid #cccccc;
+  background-color: #f2f2f2;
+  margin-bottom: 5px;
+}
+
+.friend-cover{
+  height: 120px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  /* border: 1px solid red; */
+}
+
+.friend-cover > img{
+  height: inherit;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.pp-friend{
+  border-radius: 50%;
+  position: relative;
+  margin-top: -50px;
+  margin-left: 20px;
+}
+
+.pp-friend > img{
+  position: relative;
+  height: 70px;
+  width: 70px;
+  border-radius: inherit;
+  border: 7px solid #f2f2f2;
+}
+
+.friend-intro > span > a{
+  position: relative;
+  top: 0;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #27aae1;
+  font-weight: 600;
+  font-family: "Trebuchet MS";
+}
+
+.friend-intro > span > a:hover{
+  text-decoration: underline;
+}
+
+.friend-intro > .course{
+  margin-left: 20px;
+  font-size: 14px;
+  color: #6d6e71;
+  font-family: "Trebuchet MS";
+}
+
+.friend-intro > .pull-right{
+  position: relative;
+  right: 20px;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+}
+
+.friend-intro > .pull-right > a{
+  color: green;
+  cursor: pointer;
+}
+
+.friend-intro > .pull-right > a:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.stalk-btn{
+  color: red !important;
+}
+
+.stalk-btn:hover{
+  color: green !important;
+}
+
+.navigation-wrapper > .info-display > .body > form{
+  margin: 10px;
+}
+
+.navigation-wrapper > .info-display > .body > form > label{
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 150px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.navigation-wrapper > .info-display > .body > form > input{
+  display: inline-block;
+  float: left;
+}
+
+/* Manage college page ends */
+
+.footer{
+  height: auto;
+}

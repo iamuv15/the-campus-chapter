@@ -1,0 +1,69 @@
+body{
+  overflow: auto !important;
+}
+
+.content{
+  margin: 10px 0;
+}
+
+form > div > fieldset{
+  border: 1px solid #367fa9;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0;
+  background: #fcfcfc;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+form > div > fieldset > legend{
+  color: #367fa9;
+  font-family: "Trebuchet MS";
+}
+
+form > div > fieldset > div > div > label > p{
+  display: inline-block;
+  font-family: "Trebuchet MS";
+}
+
+form > div > fieldset > div > div > label > i{
+  color: #367fa9;
+  margin: 15px 0 0 0;
+}
+
+form > div > fieldset > div > div > input,
+form > div > fieldset > div > div > textarea{
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+  resize: none;
+  background-color: #fcfcfc;
+  border: 0;
+  border-bottom: 1px solid #000;
+  outline: none;
+  font-weight: 600;
+  font-family: "Trebuchet MS";
+}
+
+form > div > fieldset > div > div > textarea{
+  height: 30px;
+}
+
+form > div > fieldset > div > div > input:focus,
+form > div > fieldset > div > div > textarea:focus{
+  border-bottom: 2px solid #367fa9;
+}
+
+form > div > fieldset > button{
+  padding: 6px;
+  width: 25%;
+  background: #fff;
+  color: #367fa9;
+  border: 1px solid #367fa9;
+  border-radius: 50px;
+}
+
+form > div > fieldset > button:hover{
+  background: #367fa9;
+  color: #fff;
+}

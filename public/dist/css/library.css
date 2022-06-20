@@ -1,0 +1,156 @@
+body{
+    background-color: #f2f2f2;
+    overflow-x: hidden !important;
+}
+.universal-box{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 30px;
+}  
+.cover-pic{
+    display: block;
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+.cover-header{
+    display: block;
+    position: relative;
+    top: -350px;
+}
+.cover-header p{
+    display: block;
+    position: relative;
+    color: white;
+    font-family: Moolboran;
+    font-size: 25px;
+    width: 330px;
+    margin: 0 auto !important;
+}
+.cover-footer{
+    display: block;
+    position: relative;
+    top: -100px;
+}
+.cover-footer p{
+    display: block;
+    position: relative;
+    color: white;
+    font-family: Moolboran;
+    font-size: 25px;
+    width: 410px;
+    margin: 0 auto !important;
+}
+.dropdown.dropdown-lg .dropdown-menu {
+    margin-top: 0px;
+    padding: 0px;
+}
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: 0px;
+    height: 34px;
+}
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-group .form-control:last-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    #adv-search {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 500px;
+    }
+}
+.contain{
+    margin: 10px !important;
+}
+.contain-input{
+    width: 96% !important;
+    margin: 0px 10px !important;
+}
+
+/*
+    Section recommended books
+*/
+
+.category-box{
+    display: block;
+    position: relative;
+    top: 20px;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+}
+.category-title{
+    font-weight: 800;
+    position: relative;
+    margin-left: 0px;
+    padding: 10px 0px !important;
+}
+.category-title > span{
+    margin-left: 10px;
+}
+.inner-category-box{
+    display: block;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.book-container{
+    display: inline-grid;
+    position: relative;
+    top: -26px;
+    left: 20px;
+    margin-right: 10px;
+    height: 170px;
+    width: 10%;
+    min-width: 150px;
+}
+.book-cover{
+    display: block;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.book-title{
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;     /* fallback */
+    max-height: 32px;      /* fallback */
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+.book-title a{
+    text-decoration: underline;
+}
+.book-author a{
+    font-size: 11px;
+    color: #808080;
+}

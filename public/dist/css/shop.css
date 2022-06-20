@@ -1,0 +1,178 @@
+body{
+    background-color: #f2f2f2 !important;
+}
+
+.club-global-container{
+    height: 600px;
+    max-width: 900px;
+    min-width: 300px;
+    width: 60%;
+    position: relative;
+    top: 120px;
+    margin: 0 auto;
+}
+
+.club-global-content{
+    height: auto;
+    max-width: 700px;
+    min-width: 50px;
+    position: relative;
+    margin: 0 auto;
+    float: left;
+    margin-left: 20px;
+    color: #b71f94;
+    display: block;
+}
+
+.club-container{
+    height: 90%;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.club-single{
+    position: relative;
+    height: 45%;
+    width: 290px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: #7EC0EE;
+    max-height: 400px;
+    max-width: 400px;
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.club-single-hover{
+    display: none;
+    position: absolute; 
+    bottom: 30px; 
+    left: 27%;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #5886a6;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+    position: relative;
+    top: 15px;
+    left: -18%;
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.club-discription{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 70%;
+}
+
+.club-single:hover .club-single-hover{
+    display: block;
+}
+
+.club-single:hover{
+    background-color: #4b738e;
+}
+
+.club-single:hover .club-discription{
+    display: none;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: -8px;
+    border: 1px solid black;
+
+}
+
+.rcontainer{
+    flex: 1;
+    position: static;
+    height: auto;
+    width: 100%;
+    margin-left: 3.5%;
+    color: blue;
+}
+
+
+
+#img{
+    max-height: 30px;
+    max-width: 40px;
+}
+
+.header{
+    position: relative;  
+    top: -50px;
+    display: block;
+    border: 1px solid black;
+    height: auto;
+    background-color: #333333;
+}
+
+.header p{
+    margin-bottom: 0px;
+}
+
+.sidebar img{
+    position: relative;
+    max-height: 80px;
+    max-width: 50px;
+}
+
+.sidebar:hover hr{
+   width: auto; 
+}
+
+.sidebar hr{
+    width: 0%;
+    background-color: #333333;
+}
+
+feildset{
+    display: block !important;
+}
+
+.global-container-club{
+    position: relative;
+    height: 100%;
+}

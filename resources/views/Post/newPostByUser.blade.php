@@ -1,0 +1,1 @@
+{{ $newPost->post_id }}

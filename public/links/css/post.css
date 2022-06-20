@@ -1,0 +1,26 @@
+.post-container{
+  display: block;
+  position: relative;
+  width: 50%;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.post-container-header{
+  height: 60px;
+  border: 1px solid black;
+}
+
+.display-pic{
+  height: 59px;
+  width: 60px;
+  position: relative;
+  top: -0.8px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto 20px;
+  border: 1px solid black;
+  border-radius: 100px;
+}

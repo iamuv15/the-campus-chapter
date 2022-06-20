@@ -1,0 +1,70 @@
+.global-container-notifications{
+	width: 80% !important;
+	position: absolute !important;
+	left: 0px !important;
+}
+
+@media only screen and (max-width: 1280px) {
+	
+	.global-container-notifications{
+		width: 100% !important;
+		position: absolute !important;
+		left: 0px !important;
+	}
+	
+	.content-wrapper{
+		width: 70% !important;
+		position: absolute !important;
+		left: 0px !important;
+		top: 0px !important;
+		margin-left: 0px !important;
+	}
+}
+
+@media only screen and (max-width: 765px) {
+	
+	.global-container-notifications{
+		width: 100% !important;
+		position: absolute !important;
+		left: 0px !important;
+	}
+	
+	.content-wrapper{
+		width: 100% !important;
+		position: absolute !important;
+		left: 0px !important;
+		top: 0px !important;
+	}
+}
+
+@media only screen and (max-width: 705px) {
+	
+	.global-container-notifications{
+		width: 100% !important;
+		position: absolute !important;
+		left: 0px !important;
+	}
+	
+	.content-wrapper{
+		width: 100% !important;
+		position: absolute !important;
+		left: 0px !important;
+		top: 120px !important;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	
+	.global-container-notifications{
+		width: 100% !important;
+		position: absolute !important;
+		left: 0px !important;
+	}
+	
+	.content-wrapper{
+		width: 100% !important;
+		position: absolute !important;
+		left: 0px !important;
+		top: 0px !important;
+	}
+}

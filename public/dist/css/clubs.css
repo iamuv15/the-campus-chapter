@@ -1,0 +1,133 @@
+body{
+    background-color: white !important;
+}
+
+
+.sidebar-left{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 5%;
+    width: 15%;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+.sidebar-right{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    float: right;
+    right: 5%;
+    width: 20%;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+.right-section{
+    display: inline-block;
+    position: absolute;
+    width: 55%;
+    left: 20%;
+    height: 100%;
+    top: 0;
+    background-color: #f2f2f2;
+}
+
+.global-container-club{
+    position: relative;
+    height: 95.7%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.club-pic-container{
+    display: block;
+    height: 200px;
+    width: 85%;
+    border: 1px solid black;
+    position: relative;
+    top: 55px;
+    margin: 0 auto;
+}
+
+.club-info-container{
+    display: block;
+    height: auto;
+    width: 85%;
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.upcoming-events{
+    height: 250px;
+    width: 92%;
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+    border: 1px solid grey;
+}
+
+#upcoming-events-content{
+    position: relative;
+    top: 45%;
+    left: 25%;
+    font-weight: bold;
+    color: gray;
+}
+
+.create-event{
+    height: 250px;
+    width: 92%;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    border: 1px solid grey;
+}
+
+#create-event-content{
+    position: relative;
+    top: 45%;
+    left: 25%;
+    font-weight: bold;
+    color: gray;
+}
+
+.privious-events{
+    height: 250px;
+    width: 92%;
+    position: relative;
+    top: 15px;
+    margin: 0 auto;
+    border: 1px solid grey;
+}
+
+#privious-events-content{
+    position: relative;
+    top: 45%;
+    left: 25%;
+    font-weight: bold;
+    color: gray;
+}
+
+.link-options{
+    height: 40px;
+    width: 100%;
+}
+
+#l-o{
+    color: black;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+p{
+    padding: 6px 0 0 5px;
+}

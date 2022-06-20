@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fundraising Grader</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <div class="info">
+  <h1><span>The</span>Campus Chapter</h1>
+  <span>
+    Setting up your chapter!
+  </span>
+</div>
+
+
+
+<!-- Modal -info -->
+
+<form class="steps" accept-charset="UTF-8" enctype="multipart/form-data" novalidate="">
+  <ul id="progressbar">
+    <li class="active">Basic Information</li>
+    <li>Professional Information</li>
+    <li>Contact Information</li>
+  </ul>
+
+
+
+  <!-- USER INFORMATION FIELD SET -->
+  <fieldset>
+    <h2 class="fs-title">Basic Information</h2>
+    <h3 class="fs-subtitle">We just need some basic information!</h3>
+    <!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+
+          <label for="name">What's your Name? *</label><br>
+
+          <input id="firstname" name="firstname" required="required" type="text" value="" placeholder="First Name" data-rule-required="true" data-msg-required="Please include your First name" class="inline-input">
+          <input id="middlename" name="middlename" required="required" type="text" value="" placeholder="Middle Name" data-rule-required="true" class="inline-input">
+          <input id="lastname" name="lastname" required="required" type="text" value="" placeholder="Last Name" data-rule-required="true" data-msg-required="Please include your Last name" class="inline-input">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+
+    <!-- Begin What's Your Date of Birth Field -->
+        <div class="hs_dob field hs-form-field">
+
+          <label for="dob">What's your Date of Birth? *</label>
+
+          <input id="dob" name="dob" required="required" type="date" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid Date of Birth." >
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your Date of Birth Field -->
+
+    <!-- Begin What's Your Gender Field -->
+        <div class="hs_gender field hs-form-field">
+
+          <label for="gender">What's your Gender? *</label>
+
+          <p>
+            <input type="radio" id="test1" name="radio-group">
+            <label for="test1">Male</label>
+          </p>
+          <p>
+            <input type="radio" id="test2" name="radio-group">
+            <label for="test2">Female</label>
+          </p>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your Gender Field -->
+
+    <!-- Begin languages known Field -->
+        <div class="hs_langauges field hs-form-field hs_total_number_of_constituents_in_your_database">
+
+          <label for="languages_known">Which languages do you know?</label>
+
+          <input id="languages_known" type="text" value="" placeholder="" data-rule-required="false" data-msg-required="" >
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+
+    <!-- End Languages Known Field -->
+    <input type="button" data-page="1" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+
+
+  <!-- PROFESSIONAL INFORMATION FIELD SET -->
+  <fieldset>
+    <h2 class="fs-title">Professional Information</h2>
+    <h3 class="fs-subtitle">Let's set your Professional details on your chapter!</h3>
+      <!-- Begin Registration Number Field -->
+        <div class="form-item webform-component webform-component-textfield hs_registration_number field hs-form-field" id="webform-component-acquisition--amount-1">
+
+          <label for="registration_number">What is your Registration Number? *</label>
+
+          <input id="registration_number" class="form-text hs-input" name="registration_number" required="required" type="text" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a Registration Number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      <!-- End Registration Number Field -->
+
+      <!-- Begin course Field -->
+        <div class="form-item webform-component webform-component-textfield hs_roll_number field hs-form-field" id="webform-component-acquisition--amount-1">
+
+          <label for="roll_number">Which course have you enrolled? *</label>
+          <select class="" name="">
+            <option value="">Select Course</option>
+            <option value="">Degree</option>
+            <option value="">Diploma</option>
+          </select>
+
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      <!-- End course Field -->
+
+      <!-- Begin Branch Name Branch Name Field -->
+        <div class="form-item webform-component webform-component-textfield hs_branch field hs-form-field" id="webform-component-acquisition--amount-1">
+
+          <label for="branch">What is your Branch Name? *</label>
+          <select class="" name="">
+            <option value="">Select Branch</option>
+
+          </select>
+
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      <!-- End Branch Name Branch Name Field -->
+
+      <!-- Begin Batch Field -->
+        <div class="form-item webform-component webform-component-textfield hs_batch field hs-form-field" id="webform-component-acquisition--amount-1">
+
+          <label for="batch">Which Batch are you in? *</label>
+          <select class="" name="">
+            <option value="">Select Batch</option>
+            <option value="">2k15</option>
+          </select>
+
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      <!-- End Batch Field -->
+
+      <!-- Begin Trade Field -->
+        <div class="form-item webform-component webform-component-textfield hs_trade field hs-form-field" id="webform-component-acquisition--amount-1">
+
+          <label for="trade">In which semester are you? *</label>
+
+          <input id="trade" class="form-text hs-input" name="trade" required="required" type="number" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a Registration Number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      <!-- End Trade Field -->
+
+    <input type="button" data-page="2" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" data-page="2" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+
+
+  <!-- CONTACT INFORMATION FIELD SET -->
+  <fieldset>
+    <h2 class="fs-title">Contact Information</h2>
+    <h3 class="fs-subtitle">Make it easy for people to contact you!</h3>
+
+    <!-- Begin contact Number Field -->
+      <div class="form-item webform-component webform-component-textfield hs_branch field hs-form-field" id="webform-component-acquisition--amount-1">
+
+        <label for="contact_number">What is your Contact Number? *</label>
+
+        <input id="contact_number" class="form-text hs-input" name="contact_number" type="number">
+        <span class="error1" style="display: none;">
+            <i class="error-log fa fa-exclamation-triangle"></i>
+        </span>
+      </div>
+    <!-- End contact Number Field -->
+    <input type="button" data-page="3" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" data-page="3" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+
+  <fieldset>
+    <h2 class="fs-title">It's on the way!</h2>
+    <h3 class="fs-subtitle">Redirecting you to your chapter!</h3>
+  </fieldset>
+
+</fieldset>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js'></script>
+<script  src="js/index.js"></script>
+
+</body>
+
+</html>

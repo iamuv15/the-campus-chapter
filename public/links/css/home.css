@@ -1,0 +1,440 @@
+.content-wrapper{
+  position: relative;
+  top: 50px;
+  width: 100%;
+  /* width: 84%; If  sidebar is needed*/
+  height: auto;
+}
+
+.inner-content-wrapper{
+  width: 70%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.left-section{
+  display: inline-block;
+  float: left;
+  height: 200px;
+  width: 22%;
+  /* border: 1px solid black; */
+}
+
+.left-section > .user-wigid-list{
+  position: fixed;
+  width: 14.5%;
+  margin-top: 5px;
+}
+
+.left-section > .user-wigid-list > ul > a > .profile-card{
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 0 1px #367fa9;
+  margin-bottom: 5px;
+}
+
+.left-section > .user-wigid-list > ul > a > li{
+  list-style: none;
+  font-size: 13px;
+  line-height: 28px;
+  padding-left: 10px;
+}
+
+.left-section > .user-wigid-list > ul > a > li > i{
+  /* border-radius: 50%; */
+  /* width: 20px;
+  height: 20px; */
+  /* border: 1px solid black; */
+  color: #367fa9;
+}
+
+.left-section > .user-wigid-list > ul > a > li > img{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 30px;
+  margin-bottom: -5px;
+  /* border-radius: 200px; */
+  /* position: relative; */
+  /* margin: 0 auto; */
+  box-shadow: 0 0 1px grey;
+  /* border-radius: 100px; */
+}
+
+.left-section > .user-wigid-list > ul > a > li > .profile-name{
+  font-size: 14px;
+  text-align: justify;
+  font-weight: 800px !important;
+}
+
+.left-section > .user-wigid-list > ul > a > li > span{
+  color: black !important;
+  line-height: 30px;
+  padding-left: 4px;
+}
+
+.left-section > .user-wigid-list > ul > a > li.active{
+  background-color: white !important;
+}
+
+.left-section > .user-wigid-list > ul > a > li:hover{
+  background-color: white !important;
+}
+
+.left-section button{
+  background: #4a8bb1;
+  color: white;
+  border-radius: 0;
+  width: 100%;
+  font-weight: lighter;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.newsfeed-section{
+  display: inline-block;
+  float: left;
+  width: 45% !important;
+  /* border: 1px solid blue; */
+}
+
+.post-section{
+    display: inline-block;
+    position: relative;
+    top: 0px !important;
+    width: 100% !important;
+    margin-bottom: 3px;
+}
+
+.right-section{
+  display: inline-block;
+  right: 0;
+  width: 28%;
+  /* border: 1px solid red; */
+  height: auto;
+}
+
+/* Challenges section styling */
+.challenges-section,
+.reminders-section{
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: 5px 0px 0px 10px !important;
+  /* border: 0.2px solid grey; */
+  background: #fff;
+  box-shadow: 0 0 1px grey;
+  border-radius: 3px;
+  padding: 10px 10px 1px;
+}
+
+.challenges-section > h4,
+.reminders-section > h4{
+  font-size: 15px !important;
+  font-family: "Trebuchet MS";
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-left: 2px;
+}
+
+.challenges-section > .challenges-list > .challenges-list-item,
+.reminders-section > .reminders-list > .reminders-list-item{
+  list-style: none;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  background: #f5f5f5;
+}
+
+.challenges-section > .challenges-list > .challenges-list-item > .ch-icon,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-icon{
+  width: 20%;
+  font-size: 30px;
+  /* border: 1px solid red; */
+  position: absolute;
+  padding: 5px;
+}
+
+.challenges-section > .challenges-list > .challenges-list-item > .ch-icon > .fa,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-icon > .fa{
+  color: #367fa9;
+}
+
+.challenges-section > .challenges-list > .challenges-list-item > .ch-icon,
+.challenges-section > .challenges-list > .challenges-list-item > .ch-info,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-icon,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-info{
+  display: inline-block;
+}
+
+.challenges-section > .challenges-list > .challenges-list-item > .ch-info,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-info{
+  position: relative;
+  /* border: 1px solid blue; */
+  width: 75%;
+  left: 25%;
+}
+
+.challenges-section > .challenges-list > .challenges-list-item > .ch-info > span,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-info > span{
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  text-align: justify;
+}
+
+.challenges-section > .challenges-list > .challenges-list-item > .ch-info > div > .ch-date,
+.challenges-section > .challenges-list > .challenges-list-item > .ch-info > div > .ch-time,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-info > div > .rm-date,
+.reminders-section > .reminders-list > .reminders-list-item > .rm-info > div > .rm-time{
+  font-size: 10px;
+  color: grey;
+}
+
+.challenges-section > .challenges-list > a > .ch-join{
+  height: 25px;
+  background: #3c8dbc;
+  margin-top: -14px;
+  margin-bottom: 4px;
+}
+
+.challenges-section > .challenges-list > a > .ch-join > p{
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  text-align: center;
+  padding-top: 4px;
+}
+/* Challenges section ends */
+
+.post-form-container{
+  position: relative;
+  border: 1px solid black;
+  height: 200px;
+  width: 100%;
+}
+
+.post-form-container > .form-container-header > .post-options{
+  border-bottom: 1px solid black;
+  width: 100.2%;
+  position: relative;
+  left: -1px;
+}
+
+.post-form-container > .form-container-header > .post-options > ul{
+  list-style: none;
+  /* border-bottom: 1px solid black;
+  position: relative;
+  left: -1px;
+  width: 100.2%; */
+}
+
+.post-form-container > .form-container-header > .post-options > ul > li{
+  display: inline-block;
+  /* margin: 0px; */
+  padding: 5px;
+}
+
+.post-form-container > .form-container-content{
+  height: auto;
+  width: 99%;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.post-form-container > .form-container-content > .profile-pic-sm{
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  /* border: 1px solid blue; */
+}
+
+.post-form-container > .form-container-content > .profile-pic-sm > img{
+  height: inherit;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.post-form-container > .form-container-content > form{
+  margin: 0px !important;
+  width: 85%;
+  position: absolute;
+  display: inline-block;
+  top: 0px;
+  /* border: 1px solid black; */
+}
+
+/* .post-form-container > .form-container-content > form > textarea{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 60px;
+  width: 100%;
+  outline: none;
+  resize: none;
+  border: none;
+}
+
+.public-post-popup{
+  display: block !important;
+  width: 100% !important;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  height: auto !important;
+  position: relative !important;
+} */
+
+/* .feed-section{
+  position: relative !important;
+  display: inline-block;
+  /* border: 1px solid yellow; */
+  /* top: 0px;
+  width: 70% !important;
+  height: auto; */
+/* } */
+
+.newsfeed{
+  margin-bottom: 3px;
+}
+.timeline-wrapper{
+  width: 102%;
+  margin-left: -4px;
+}
+
+.timeline-item {
+    background: #fff;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    border-radius: 3px;
+    padding: 12px;
+    margin: 0 auto;
+    max-width: 472px;
+    min-height: 200px;
+}
+@keyframes placeHolderShimmer {
+    0% {
+        background-position: -468px 0
+    }
+    100% {
+        background-position: 468px 0
+    }
+}
+.animated-background {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    height: 96px;
+    position: relative;
+}
+.background-masker {
+    background: #fff;
+    position: absolute;
+}
+
+.round-background{
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  position: relative;
+}
+/* Every thing below this is just positioning */
+
+.background-masker.header-picture{
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+}
+
+.background-masker.header-top,
+.background-masker.header-bottom,
+.background-masker.subheader-bottom {
+    top: 0;
+    left: 40px;
+    right: 0;
+    height: 10px;
+}
+.background-masker.header-left,
+.background-masker.subheader-left,
+.background-masker.header-right,
+.background-masker.subheader-right {
+    top: 10px;
+    left: 40px;
+    height: 8px;
+    width: 10px;
+}
+.background-masker.header-bottom {
+    top: 18px;
+    height: 6px;
+}
+.background-masker.subheader-left,
+.background-masker.subheader-right {
+    top: 24px;
+    height: 6px;
+}
+.background-masker.header-right,
+.background-masker.subheader-right {
+    width: auto;
+    left: 300px;
+    right: 0;
+}
+.background-masker.subheader-right {
+    left: 230px;
+}
+.background-masker.subheader-bottom {
+    top: 30px;
+    height: 10px;
+}
+.background-masker.content-top,
+.background-masker.content-second-line,
+.background-masker.content-third-line,
+.background-masker.content-second-end,
+.background-masker.content-third-end,
+.background-masker.content-first-end {
+    top: 40px;
+    left: 0;
+    right: 0;
+    height: 6px;
+}
+.background-masker.content-top {
+    height: 20px;
+}
+.background-masker.content-first-end,
+.background-masker.content-second-end,
+.background-masker.content-third-end {
+    width: auto;
+    left: 380px;
+    right: 0;
+    top: 60px;
+    height: 8px;
+}
+.background-masker.content-second-line {
+    top: 68px;
+}
+.background-masker.content-second-end {
+    left: 420px;
+    top: 74px;
+}
+.background-masker.content-third-line {
+    top: 82px;
+}
+.background-masker.content-third-end {
+    left: 300px;
+    top: 88px;
+}
